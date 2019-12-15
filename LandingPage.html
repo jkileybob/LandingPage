@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Engage Landing Page Demo">
+  <title>Landing Page Demo</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon-pizza/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-pizza/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-pizza/favicon-16x16.png">
+  <link rel="manifest" href="./favicon-pizza/site.webmanifest">
+
+
+  <link rel="stylesheet" type="text/css" href="./CSS/LandingPage.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./CSS/LPTablet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./CSS/LPmobile.css" media="screen" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="libs/offside/offside.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/genericons/3.1/genericons.min.css"> -->
+  <!-- <script type="text/javascript" src="libs/offside/offside.min.js"></script> -->
+
+  <!-- Mobile Gesture Library -->
+    <!-- <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.js"></script> -->
+
+</head>
+
+<body>
+
+  <!-- onclick hamburger list menu
+  (outide of main content) -->
+  <nav id="nav-menu">
+    <div class="nav-mobile-wrap">
+
+      <div id="nav-mobile-close" onclick="closeMenu()">&times;</div>
+
+      <ul class="nav-mobile-list">
+        <li id="nav-mobile-list-item">
+          <a href="#about">About</a>
+        </li>
+        <li id="nav-mobile-list-item">
+          <a href="#our-philosophy">Our Philosophy</a>
+        </li>
+        <li id="nav-mobile-list-item">
+          <a href="#FAQs">FAQs</a>
+        </li>
+        <li id="nav-mobile-list-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-media">
+
+      </div>
+      <div class="mobile-intel">
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-image">
+
+        <nav class="navbar">
+          <div class="nav-row">
+
+            <div class="nav-column">
+              <img id="logo" src="./images/logo.png" />
+            </div>
+
+            <div id="menu-items" class="nav-column">
+              <div id="item">
+                <a href="#">About</a>
+                <hr id="navbar-underline">
+              </div>
+              <div id="item">
+                <a href="#">Our Philosophy</a>
+                <hr id="navbar-underline">
+              </div>
+              <div id="item">
+                <a href="#">FAQs</a>
+                <hr id="navbar-underline">
+              </div>
+              <div id="item">
+                <a href="#">Contact</a>
+                <hr id="navbar-underline">
+              </div>
+            </div>
+
+            <div class="nav-column">
+              <button onclick="scrollToForm()" id="nav-signup-button">Sign Up</button>
+            </div>
+
+          </div>
+        </nav>
+
+        <!-- Mobile Navbar with hamburger menu -->
+        <nav class="mobile-nav">
+          <div class="mobile-nav-row">
+            <div class="mobile-nav-col" id="mobile-logo-col">
+              <a href="#home" class="active">
+                <img id="logo" src="./images/logo.png" />
+              </a>
+            </div>
+            <div class="mobile-nav-col" id="mobile-signup-btn-col">
+              <button onclick="scrollToForm()" id="nav-signup-button">Sign Up</button>
+            </div>
+            <div class="mobile-nav-col" id="mobile-hamburger-col">
+              <div class="hamburger">
+                <a href="javascript:void(0);" class="hamburger-icon" onclick="showMobileNav()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <div id="first-section">
+          <div class="hero-text">
+            <h1 id="lg-hero-text">Manage your landing page launches in a smart way</h1>
+
+            <p id="sm-hero-text">Lorem ipsum dolor sit amet, ne tota dictas invenire eos, saepe timeam an duo, minim scriptorem cu quo. Saepe appareat cu eam, eu vix liber dictas dicunt.</p>
+
+
+            <div class="email">
+              <input id="hero-input" placeholder="Enter your email" type="email" />
+              <button onclick="inputEmail()" id="hero-email-button" src="./images/email-button.png">
+                <img src="./images/email-button-arrow.png" />
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-bottom">
+            <img id="down-icon" src="./images/down-icon.png" />
+          </div>
+        </div>
+
+
+      </div> <!-- end hero-image div -->
+    </div> <!-- end hero div -->
+
+
+    <!-- FEATURES -->
+    <div class="feature-cont">
+      <div class="features">
+
+        <div class="feature-row" id="feature-row-1">
+          <div class="feature-col">
+
+            <div class="sm-feature-row">
+              <div class="sm-feature-col">
+                <div class="icon">
+                  <img id="blue-dot" src="./images/circle.png">
+                  <img id="feature-icon" src="./images/megaphone-icon.png" />
+                  </img>
+                </div>
+              </div>
+              <div class="sm-feature-col">
+                <div id="feature-text">
+                  <h1 id="feature-header">Reach your audience in seconds</h1>
+                  <p id="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col" id="bottom-feature">
+            <div class="sm-feature-row">
+              <div class="sm-feature-col">
+                <div class="icon">
+                  <img id="blue-dot" src="./images/circle.png">
+                  <img id="feature-icon" src="./images/H1-icon.png" />
+                  </img>
+                </div>
+              </div>
+              <div class="sm-feature-col">
+                <div id="feature-text">
+                  <h1 id="feature-header">Customizable typography</h1>
+                  <p id="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row" id="feature-row-2">
+          <div class="feature-col">
+
+            <div class="sm-feature-row">
+              <div class="sm-feature-col">
+                <div class="icon">
+                  <img id="blue-dot" src="./images/circle.png">
+                  <img id="feature-icon" src="./images/chart-icon.png" />
+                  </img>
+                </div>
+              </div>
+              <div class="sm-feature-col">
+                <div id="feature-text">
+                  <h1 id="feature-header">Install and run analytical plug-ins</h1>
+                  <p id="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col">
+            <div class="sm-feature-row">
+              <div class="sm-feature-col">
+                <div class="icon">
+                  <img id="blue-dot" src="./images/circle.png">
+                  <img id="feature-icon" src="./images/credit-card-icon.png" />
+                  </img>
+                </div>
+              </div>
+              <div class="sm-feature-col">
+                <div id="feature-text">
+                  <h1 id="feature-header">Secure donations</h1>
+                  <p id="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-cont">
+      <div class="stats-image">
+        <div class="stats-row">
+          <div class="stats-col">
+
+            <div class="sm-stat-row" id="sm-stat-num">
+              53
+            </div>
+            <div class="sm-stat-row" id="sm-stat-text">
+              Launched Pages
+            </div>
+
+          </div>
+
+          <div class="stats-col">
+
+            <div class="sm-stat-row" id="sm-stat-num">
+              45
+            </div>
+            <div class="sm-stat-row" id="sm-stat-text">
+              Unique Campaigns
+            </div>
+
+          </div>
+
+          <div class="stats-col">
+
+            <div class="sm-stat-row" id="sm-stat-num">
+              35
+            </div>
+            <div class="sm-stat-row" id="sm-stat-text">
+              Donation Pages
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form">
+      <div class="form-container">
+
+        <div class="form-column">
+          <h1 id="form-header">Sign Up for Updates</h1>
+          <input class="form-input" placeholder="First Name" />
+          <input id="email-input" class="form-input" placeholder="Email Address" />
+        </div>
+
+        <div class="form-column" id="col-2">
+          <h1 id="spacer">Sign Up for Updates</h1>
+          <input class="form-input" id="last-name" placeholder="Last Name" />
+
+          <div class="zip-submit">
+            <input class="form-input" id="zipcode" placeholder="Zipcode" />
+            <button onclick="sayThanks()" id="submit-button" class="submit-button" >Submit</button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="mobile-form">
+        <h1 id="form-header">Sign Up for Updates</h1>
+        <input class="form-input" placeholder="First Name" />
+        <input class="form-input" id="last-name" placeholder="Last Name" />
+        <input id="email-input-mobile" class="form-input" placeholder="Email Address" />
+        <div class="zip-submit">
+          <input class="form-input" id="zipcode" placeholder="Zipcode" />
+          <button onclick="sayThanks()" id="submit-button-mobile" class="submit-button" >Submit</button>
+        </div>
+      </div>
+
+
+      <div class="thanks">
+        <h1 id="thx-header">Thank You for Signing Up!</h1>
+        <p id="thx-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        <p id="plz-share">Please Share:</p>
+        <div id="share-btn-cont">
+          <img id="share-button" src="./images/tweet-btn.png" />
+          <img id="share-button" src="./images/fb-btn.png" />
+          <img id="share-button" src="./images/email-btn.png" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about">
+      <div class="about-row">
+        <hr class="blue-line">
+        <div class="about-text">
+          <h1 id="about-header">About Text</h1>
+          <p id="about-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+        </div>
+
+        <hr class="about-divider">
+
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video">
+      <div class="vid-container">
+        <div class="vid-col">
+          <iframe class="video-embed" src="https://www.youtube.com/embed/QcD_YXCxxZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="vid-col">
+          <hr class="blue-line">
+          <h1 id="vid-header">Embedded Videos</h1>
+          <p id="vid-descrpition">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIA -->
+    <div class="media">
+      <div class="media-cont">
+        <hr class="blue-line" id="media-blue-line">
+        <header id="media-header">Latest Media</header>
+        <div class="media-box-container">
+          <div id="media-box">
+            <div id="box-container">
+              <p id="box-publication">Newsweek</p>
+              <header id="box-headline">This is an example of a headline with 2 lines of text</header>
+              <p id="box-date">November 13th, 2019</p>
+              <p id="box-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <header id="box-read-more">
+                <a href="https://www.newsweek.com/">Read more...</a>
+              </header>
+            </div>
+          </div>
+          <div id="media-box">
+            <div id="box-container">
+              <p id="box-publication">The Verge</p>
+              <header id="box-headline">This is an example of a headline with 2 lines of text</header>
+              <p id="box-date">November 13th, 2019</p>
+              <p id="box-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <header id="box-read-more">
+                <a href="https://www.theverge.com/">Read more...</a>
+              </header>
+            </div>
+          </div>
+          <div id="media-box">
+            <div id="box-container">
+              <p id="box-publication">Engadget</p>
+              <header id="box-headline">This is an example of a headline with 2 lines of text</header>
+              <p id="box-date">November 13th, 2019</p>
+              <p id="box-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <header id="box-read-more">
+                <a href="https://www.engadget.com/">Read more...</a>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUOTE -->
+    <div class="quote">
+      <div class="quote-image">
+        <img id="carousel-button-left" onclick="prevQuote()" src="./images/left-icon.png">
+
+        <!-- slide number 1 -->
+        <div class="quote-container" id="quote-1">
+          <header id="quote-header">
+            “When we used a landing page, our campaign audience grew a lot — Strongly recommend.”
+          </header>
+          <div id="avatar-container">
+            <img src="./images/avatar.png">
+            <div id="avatar-text">
+              <p id="avatar-name">Maurice McLaughlin</p>
+              <p id="avatar-job-title">Media Director</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide number 2						 -->
+        <div class="quote-container" id="quote-2">
+          <header id="quote-header">
+            "Disneyland. The world's biggest people trap, built by a mouse."
+          </header>
+          <div id="avatar-container">
+            <img id="avatar-img" src="https://www.fillmurray.com/200/300">
+            <div id="avatar-text">
+              <p id="avatar-name">Bill Murray</p>
+              <p id="avatar-job-title">Famous Actor</p>
+            </div>
+          </div>
+        </div>
+
+
+        <img id="carousel-button-right" onclick="nextQuote()" src="./images/right-icon.png">
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map">
+      <div id="map">
+        <div id="map-spacer"></div>
+        <div id="googleMap"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div id="footer-copyright">
+        © 2018 Copyright | <a href="https://www.termsfeed.com/blog/wp-content/uploads/2019/04/privacy-policy-template.pdf">Privacy Policy</a>
+        <hr id="footer-underline">
+      </div>
+      <div id="footer-contact">
+        <div id="footer-address">
+          136 Miller Rapid Ste. 956
+        </div>
+        <div id="footer-phone">
+          (203)666-7499
+        </div>
+      </div>
+      <div id="footer-links">
+        <a href="http://www.twitter.com">
+          <img src="./images/twitter.png" />
+        </a>
+        <a href="http://facebook.com">
+          <img src="./images/facebook.png" />
+        </a>
+        <a href="http://youtube.com">
+          <img src="./images/youtube.png" />
+        </a>
+        <a href="http://instagram.com">
+          <img src="./images/insta.png" />
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+<!-- Local JS file -->
+  <script type="text/javascript" src="./LandingPage.js"></script>
+<!-- Google Maps Library -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeCC1uPLrl95qbPv5OBmCvr0QHI_wGt7g&callback=myMap"></script>
+
+</body>
+
+</html>
