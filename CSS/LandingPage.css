@@ -1283,6 +1283,7 @@ input.form-input {
   margin-bottom: 200px;
 }
 #load-more {
+  background-color: white;
   align-self: flex-end;
   margin-left: 20px;
   display: flex;
